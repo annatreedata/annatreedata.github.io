@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>How to create your own data schema | Open Data Training </title>
+<meta name="author" content="AnnaTrichkine" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body id="exe-node-4" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<section id="main">
+<header id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">How to create your own data schema</h1></div></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id12">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">1. Select your dataset</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_108_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="color: #000000;">To begin with, you will need to select your dataset. An example dataset might look like this:</span></p>
+<p><span style="color: #000000;"><img src="img0.png" width="949" height="270" alt="Datasetexcel" /></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id13">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">2. Decide the data type for each individual column</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta13_109_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="color: #000000;">Each column must only have one datatype in each column. </span></p>
+<p><span style="color: #000000;">Using our example dataset above, we would specify that each column is one of the following data types:</span></p>
+<p><img src="img0.1.png" width="334" height="643" alt="datatypes" /></p>
+<p>Each column now has a little symbol to the left of the column name that confirms the data type:</p>
+<p><img src="img1.png" width="949" height="25" alt="datatypetable" /></p>
+<p><span style="color: #000000;"></span>A full description of data types on excel can be found here: https://docs.microsoft.com/en-us/power-query/data-types</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id14">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">3. Check that your chosen datatypes match up to the data in the columns</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_110_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="color: #000000;">Once you have selected the datatype for each column, you will need to check that the data in each column matches the correct data type.</span></p>
+<p>For example, all date formats should be YYYY-MM-DD and in our dataset the date type uses DD/MM/YYYY instead. We will have to amend this. This is because a computer does not know which the first two numbers refer to a month or a date as this is different depending on which country you are based in. The best way for a computer to understand the date without having to guess is by using the YYYY-MM-DD format.</p>
+<p>Error:</p>
+<p><img src="img0.2.png" width="949" height="270" alt="errordates" /></p>
+<p>Corrected date format:</p>
+<p><img src="img1.1.png" width="949" height="278" alt="newdateformat" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id15">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">4. Check also that there are no errors in the data, and that the data is clean</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta15_111_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="color: #000000;">Common data errors include: </span></p>
+<ol>
+<li>Single or double spaces at the start/beginning/middle of a string where there shouldn't be. For example, if we use _ to denote a space, a name might have: Sun _ _ Moon rather than Sun _ Moon</li>
+<li>Incorrect spelling</li>
+<li>Different Case (e.g. upper or lower case in different orders)</li>
+<li>Incorrect number of characters. For example, if a postcode should only have 7 characters as a maximum someone might have incorrectly entered a postcode that has 8 or 9 characters</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id16">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">5. Write up your schema</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta16_112_2" class="block iDevice_content">
+<div class="exe-text"><p>You will then need to create a document to describe what your dataset contains, where the data is from, and what the dataset looks like.</p>
+<p>It is good practice to not use spaces in column names in your dataset as it is difficult for machines to interpret. Instead of space, we have used an underscore to rename our column names to a machine readable format.</p>
+<p><img src="img0.3.png" width="767" height="310" alt="schemadesc" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licensed under the</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
